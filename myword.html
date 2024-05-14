@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>THEOL在线原神游戏平台</title>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="/meol/common/ueditor/third-party/photo/viewer.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/meol/common/ueditor/third-party/photo/viewer.min.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f0c0175943cff889a04ff6ae1368a90c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    window.onmessage=function(ev){
+        let data = ev.data;
+        if(data.type === 'viewerImg'){
+            let imgEl = document.getElementById('topeastViewImg') || document.createElement('img');
+            imgEl.id = 'topeastViewImg'
+            imgEl.style = 'display: none';
+            imgEl.setAttribute('data-original', data.url)
+            imgEl.setAttribute('src', data.url)
+            !document.getElementById('topeastViewImg') && document.body.appendChild(imgEl);
+            var image = new Viewer(document.getElementById('topeastViewImg'),{
+                url:'data-original',
+                navbar:false,
+                title:false,
+                movable:false,
+                toolbar: {
+                    zoomIn: 1,
+                    zoomOut: 1,
+                    oneToOne: 1,
+                    reset: 1,
+                    prev: 0,
+                    play: 1,
+                    next: 0,
+                    rotateLeft: 1,
+                    rotateRight: 1,
+                    flipHorizontal: 1,
+                    flipVertical: 1,
+                },
+            });
+
+            $("#topeastViewImg").trigger('click')
+        }
+
+    }
+</script>
+
+
+
+    <meta http-equiv=“X-UA-Compatible” content=“chrome=1″ />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v9_white/newIndex.css" />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v9_white/public.css" />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v9_white/course.css" />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v9_white/style.css" />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v9_white/videoplay.css" />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-migrate-3.4.0.min.js"></script>
+    <script type="text/javascript" src="/meol/homepage/V8/style/v9_common/js/common.js" ></script>
+
+    <style>
+        .o-slider-arrows {
+            display: none;
+        }
+
+        
+        .topBoxBg {
+            background: #F0EAEA;
+            box-shadow: 0 -4px 7px #888888 inset;
+        }
+        .v9black_indexContent {
+            background: #FFFFFF;
+        }
+        .v9black_foot {
+            margin-top: 0;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="topBoxBg">
+    <!-- 顶部 -->
+    <div class="top width1400">
+        <div class="btn_search">
+            <form  action="./custom.do?menuId=12" method="post" id="searchForm"  >
+                <input type="text" id="indexSearchVal" name="s_keyword" placeholder="请输入原神角色或圣遗物">
+                <div  onclick="checkTopSearch('#searchForm')">
+                    <span class="v9black_indexSearch_ico"></span>
+                    <input type="button" id="v9black_indexSearchBtn" value="搜索">
+                </div>
+            </form>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .errorTips {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .login_nav {
+        display: block;
+        width: 76%;
+        margin: 25px auto;
+        border-bottom: 1px solid #bbbbbb;
+
+    }
+
+    .login_nav li {
+        display: inline-block;
+        font-size: 20px;
+        font-family: "微软雅黑";
+        line-height: 30px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .login_input{
+        display: inline-block;
+        width: 76%;
+        height: 50px;
+        background: transparent;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        border-radius: 10px;
+        margin: 10px 12%;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/meol/styles/newstyle/js/jquery-migrate-3.4.0.min.js"></script>
+<script type="text/javascript" src="/meol/styles/newstyle/plugins/jquery.md5.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+    function checkLogin(){
+        var name=document.getElementById("userName");
+        var pass=document.getElementById("passWord");
+        var formobj=document.getElementById("form1");
+        if(name.value == ""){
+            name.focus();
+            alert("用户名不能为空！");
+            return false;
+        }else if(pass.value == ""){
+            pass.focus();
+            alert("密码不能为空！");
+            return false;
+        }else{
+            
+            return true;
+        }
+
+    }
+//    window.onload=function () {
+    $(function () {
+        const tabControls = document.querySelectorAll('.accountLogin,.noteLogin')
+        function tabclick() {
+            var atAction = 0
+            var btns = document.getElementsByClassName('nav_btn')
+            for (var i = 0; i < btns.length; i++) {
+                const btn = btns[i]
+                btn.index = i
+                btn.addEventListener('click', () => {
+                    if (btn.classList.contains('login_action')) {
+                        atAction = btn.index
+                    }
+                    var atBtn = btns[atAction]
+                    if (atAction === btn.index) {
+                        for(var a=0;a < btns.length; a++){
+                            if(a!=atBtn){
+                                btns[a].classList.remove('login_action')
+                            }
+                        }
+                    } else {
+                        atBtn.classList.remove('login_action')
+                    }
+                    var clickBtn = btns[btn.index]
+                    clickBtn.classList.add('login_action')
+                    atAction = btn.index
+                    changeTabControl(atAction)
+                })
+            }
+        }
+        tabclick()
+        function changeTabControl(index) {
+            for (var i = 0; i < tabControls.length; i++) {
+                const tabControl = tabControls[i];
+                if (index === i) {
+                    tabControl.style.display = 'block'
+                } else {
+                    tabControl.style.display = 'none'
+                }
+            }
+        }
+
+        //校验手机号
+        function checkPhone(){
+            var phone = $.trim($("#mobileNum").val());
+            var checkMobile =/^1[0-9]{10}$/;
+            if(!phone){
+                $("#verifyTips").text("请输入手机号");
+                $("#mobileNum").addClass("inputError");
+                $("#verifyTips").css('display', 'block');
+                return false;
+            }else if(!(checkMobile.test(phone))){
+                $("#verifyTips").text("手机号输入有误");
+                $("#mobileNum").addClass("inputError");
+                $("#verifyTips").css('display', 'block');
+                // $("#mobileNum").focus();
+                return false;
+            } else {
+                $("#mobileNum").removeClass("inputError");
+                $("#verifyTips").hide();
+                return true;
+            }
+        }
+        function checkCode() {
+            var verifyNum = $.trim($("#verifyNum").val());
+            if (!verifyNum) {
+                $("#verifyTips").text("请输入验证码");
+                $("#verifyNum").addClass("inputError");
+                $("#verifyTips").css('display', 'block');
+                return false;
+            }else {
+                $("#verifyNum").removeClass("inputError");
+                $("#verifyTips").hide();
+                return true;
+            }
+        }
+        var timer;
+        function sendMessage() {
+            if(checkPhone()){
+                //发送请求  成功后调用下面代码
+                $.ajax({
+                    type: 'post',
+                    url: '/meol/sendSms.do',
+                    data: {'mobile': $.trim($("#mobileNum").val()), 'opertionType': 'loginoperation'},
+                    success: function (data) {
+                        if (data == 10010) {
+                            $("#verifyTips").text("参数异常");
+                            $("#verifyTips").css('display', 'block');
+                            return;
+                        }
+                        if (data == 10000) {
+                            $("#verifyTips").text("验证码发送成功，请注意查收");
+                            $("#verifyTips").css('display', 'block');
+                            $(".v9black_verifyNum_btn").find("span").html("<span>重新发送（<span id='countdown'>60</span>）</span>"); //改变按钮的内容
+                            $(".v9black_verifyNum_btn").find("span").unbind();   //去掉按钮点击事件
+                            //倒计时60秒后关闭
+                            var count = 60;
+                            timer = setInterval(function () {
+                                if (count < 1) {
+                                    clearInterval(timer);
+                                    timer = null;
+                                    //恢复初始值
+                                    $(".v9black_verifyNum_btn").find("span").html("<span>获取验证码</span>");
+                                    $(".v9black_verifyNum_btn").find("span").unbind().bind("click", sendMessage);
+                                    return;
+                                }
+                                $("#countdown").html(count);
+                                count--;
+                            }, 1000);
+                        } else if (data == 10001) {
+                            $("#verifyTips").text("操作过于频繁");
+                            $("#verifyTips").css('display', 'block');
+                        } else if (data == 10003) {
+                            $("#verifyTips").text("该手机号今日短信已达上限");
+                            $("#verifyTips").css('display', 'block');
+                        } else if (data == 10004 || data == 10005) {
+                            $("#verifyTips").text("短信发送失败");
+                            $("#verifyTips").css('display', 'block');
+                        } else if (data == 10008) {
+                            $("#verifyTips").text("该手机号未绑定用户");
+                            $("#verifyTips").css('display', 'block');
+                        }else if (data == 10009) {
+                            $("#verifyTips").text("未开启短信服务");
+                            $("#verifyTips").css('display', 'block');
+                        }
+                    }
+                });
+            }
+        }
+        $(".v9black_verifyNum_btn span").unbind().bind("click", sendMessage);
+
+        function mobileLogin() {
+            if (checkPhone() && checkCode()) {
+                var mobileNum = $.trim($("#mobileNum").val());
+                $.ajax({
+                    type: 'post',
+                    url: '/meol/mobileLogin.do',
+                    data: {'mobile': mobileNum, 'randomcode': $.trim($("#verifyNum").val())},
+                    success: function (data) {
+                        if (data == 20030) {
+                            $("#verifyTips").text("参数异常");
+                            $("#verifyTips").css('display', 'block');
+                            return;
+                        }
+                        if (data == 20000) {
+                            $("#verifyTips").text("登录成功正在跳转");
+                            $("#verifyTips").css('display', 'block');
+                            document.mobilelogin.submit();
+                        } else if (data == 20001) {
+                            $("#verifyTips").text("验证码错误");
+                            $("#verifyTips").css('display', 'block');
+                        } else if (data == 20002) {
+                            $("#verifyTips").text("验证码已失效");
+                            $("#verifyTips").css('display', 'block');
+                        } else if (data == 20003) {
+                            $("#verifyTips").text("验证码发送异常");
+                            $("#verifyTips").css('display', 'block');
+                        }else if (data == 20004) {
+                            $("#verifyTips").text("登录异常");
+                            $("#verifyTips").css('display', 'block');
+                        }else if (data == 20005){
+                            $("#verifyTips").text("该用户已被暂停，禁止登陆");
+                            $("#verifyTips").css('display', 'block');
+                        }
+                    }
+                });
+            }
+        }
+        $(".noteLogin button").unbind().bind("click", mobileLogin);
+    })
+</script>
+
+
+
+
+<div class="model"></div>
+
+<a class="btn_login" href="./homepage/common/sso_login.jsp">
+    <span class="login_userico" style="vertical-align: 14px;"></span><span class="login_username">登录</span></span>
+</a>
+
+
+<div class="login" id="login">
+    
+
+    <span class="login_close"></span>
+    <h5>用户登录</h5>
+    
+    
+    <form action="/meol/loginCheck.do" method="post" name="login" id="login" onSubmit="return checkLogin();" class="accountLogin"  style="display:  block">
+        
+        <input type="hidden" name="logintoken" value="1715667060508"/>
+        <input type="text" class="login_input" name="IPT_LOGINUSERNAME" id="userName" tabindex="1" placeholder="请输入用户名"/>
+        <input type="password" class="login_input" name="IPT_LOGINPASSWORD" id="passWord" tabindex="2" placeholder="请输入密码"/>
+
+        
+        
+        
+
+
+        
+            
+            
+        
+
+        
+            <button type="submit" id="loginBtn">登录</button>
+        
+    </form>
+    
+    <p>
+        
+        <a href="/meol/findPasswdIndex.do" target="_blank">找回密码</a>
+        <a href="/meol/homepage/V8/include/appDownload.jsp" target="_blank">APP下载</a>
+    </p>
+</div>
+
+
+    </div>
+    <!-- 派蒙导航 -->
+    <div class="nav width1400">
+        <a href="/meol/index.do"><div class="v9black_school_name"></div></a>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul class="main_nav">
+     
+           
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=4"  >
+                        
+                        
+
+                    
+                
+               <span>深渊教学观摩</span></a>
+           </li>
+           
+     
+           
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=12"  >
+                        
+                        
+
+                    
+                
+               <span>原神总览</span></a>
+           </li>
+           
+     
+           
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="https://eol.ctbu.edu.cn/meol/analytics/statTotleLogIndex.do?menuId=1093"  target='_blank'>
+                        
+                        
+
+                    
+                
+               <span>原神报告</span></a>
+           </li>
+           
+     
+           
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="https://eol.ctbu.edu.cn/meol/loginCheck.do?menuId=1280"  >
+                        
+                        
+
+                    
+                
+               <span>提瓦特大陆身份认证入口</span></a>
+           </li>
+           
+     
+           
+     
+           
+     
+           
+     
+           
+     
+           
+     
+           
+     
+        <li class="nav_more_li"><a class="nav_more" href="javascript:void(0)">更多稻妻黑料</a>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                        <a title="原神联盟" style="display: block;" href="/meol/courseunion/index.jsp?menuId=8"  target='_blank'>
+                                    
+                                
+
+                            
+                        
+                        <span>原神联盟</span></a>
+                    </li>
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                        <a title="原神资源中心" style="display: block;" href="https://eol.ctbu.edu.cn/meol/respush/res/res_sso.jsp?resourceIndex=1&menuId=7"  target='_blank'>
+                                    
+                                    
+                                
+
+                            
+                        
+                        <span>原神资源中心</span></a>
+                    </li>
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                        <a title="原神精品课程" style="display: block;" href="/meol/custom.do?menuId=5"  >
+                                    
+                                
+
+                            
+                        
+                        <span>原神精品课程</span></a>
+                    </li>
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                        <a title="原神课程排行" style="display: block;" href="/meol/custom.do?menuId=2"  >
+                                    
+                                
+
+                            
+                        
+                        <span>原神课程排行</span></a>
+                    </li>
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                        <a title="原神学习社区" style="display: block;" href="social/socialIndex.do?menuId=9"  target='_blank'>
+                                    
+                                
+
+                            
+                        
+                        <span>原神学习社区</span></a>
+                    </li>
+                    
+                
+                    
+                        <li>
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                        <a title="原神活动" style="display: block;" href="/meol/custom.do?menuId=3"  >
+                                    
+                                
+
+                            
+                        
+                        <span>原神活动</span></a>
+                    </li>
+                    
+                
+            </ul>
+        </li>
+    </ul>
+
+    </div>
+</div>
+<div class="v9black_indexContent" id="v9black_indexContent">
+    <!-- banner -->
+    <div class="banner" id="banner">
+        
+        <div id="rollpic">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="o-sliderContainer slide" id="pbSliderWrap0" style="margin: 0; touch-action: pan-x; height: 100%;">
+    <div class="o-slider isDraggable isVisible" id="pbSlider0" style="width: 500%; perspective: 1000px; backface-visibility: hidden; transform: translateX(0%);">
+        
+            
+
+        
+            
+
+        
+            
+
+        
+            
+                
+                     
+                     
+                        
+                        
+                           
+                                  <div class="o-slider--item" data-image="https://pic4.zhimg.com/80/v2-347f783ccb91dc6c88cfff62096242e7_720w.webp">
+                                      <div class="o-slider-textWrap"></div>
+                                   </div>
+                            
+                             
+                         
+                         
+                     
+              
+          
+
+        
+            
+                
+                     
+                     
+                        
+                        
+                           
+                                  <div class="o-slider--item" data-image="https://picx.zhimg.com/v2-906d173d60bc6c4c06d27e4919a02de7_1440w.jpg?source=172ae18b">
+                                      <div class="o-slider-textWrap"></div>
+                                   </div>
+                            
+                             
+                         
+                         
+                     
+              
+          
+
+        
+            
+                
+                     
+                     
+                        
+                        
+                           
+                                  <div class="o-slider--item" data-image="https://pic3.zhimg.com/80/v2-abf47a833a6c10bd10f8992896c28cca_720w.webp">
+                                      <div class="o-slider-textWrap"></div>
+                                   </div>
+                            
+                             
+                         
+                         
+                     
+              
+          
+
+        
+            
+                
+                     
+                     
+                        
+                        
+                           
+                                  <div class="o-slider--item" data-image="https://pic1.zhimg.com/80/v2-3162af7701f2d18120accdc6224805a8_720w.webp">
+                                      <div class="o-slider-textWrap"></div>
+                                   </div>
+                            
+                             
+                         
+                         
+                     
+              
+          
+
+        
+            
+                
+                     
+                     
+                        
+                        
+                           
+                                  <div class="o-slider--item" data-image="https://pic2.zhimg.com/80/v2-9db19314ea49bf070ee98d1dc179bee5_720w.webp">
+                                      <div class="o-slider-textWrap"></div>
+                                   </div>
+                            
+                             
+                         
+                         
+                     
+              
+          
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="width1400 height100 bannerList">
+            
+        </div>
+        <div class="banner_t"></div>
+        
+        <div class="ewm v9black_ewm"><a href = “https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_backup307" target="_blank">下载原神</a></div>
+        
+        <div class="v9black_toTop"><img src="/meol/homepage/V8/style/v9_white/img/toTop.png" alt=""/>回顶部</div>
+    </div>
+</div>
+<!-- 页尾 -->
+<div class="foot v9black_foot">
+    
+
+
+
+
+
+
+
+
+
+<div class="wraper">
+    <div class="copyright">
+        <div class="v9black_copyright">
+            
+            <span class="v9black_totalVisits">总访问量：239668547</span>
+            
+            <span class="v9black_totalCourse">总课程数：15550</span>
+            
+            <span class="v9black_onlineNum">在线人数：794</span>
+            （<span class="v9black_onlineNum_pc"> 598</span>
+            <span class="v9black_olineNum_divide">|</span>
+            <span class="v9black_onlineNum_mobile">196 </span>）
+        </div>
+        <p><a href=http://www.ctbu.edu.cn target=_blank> 原神</a> 版权所有 2019 <a href=http://www.umooc.com.cn/ target=_blank> 米哈游有限责任公司</a> 技术支持（请使用1280*1024分辨率，Chrome/Firefox/Edge/IE11浏览器访问本系统）</p>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="/meol/homepage/V8/style/v9_common/js/index.js" ></script>
+<script type="text/javascript" src="/meol/homepage/V8/style/v9_common/js/hammer.min.js" ></script>
+<script type="text/javascript" src="/meol/homepage/V8/style/v9_common/js/slider.js" ></script>
+<script type="text/javascript" src="/meol/homepage/V8/style/v9_common/js/polyfill.min.js"></script>
+<script>
+    //轮播设置
+    $('#pbSlider0').pbTouchSlider({
+        slider_Wrap: '#pbSliderWrap0',
+        slider_Threshold: 10,
+        slider_Speed: 600,
+        slider_Ease: 'ease-out',
+        slider_Drag: true, //拖动
+        auto: true, //是否自动滚动
+        autoTime: 6000, //设置图片自动时间
+        slider_Arrows: {
+            enabled: true //箭头
+        },
+        slider_Dots: { //显示点不
+            class: '.o-slider-pagination',
+            enabled: true,
+            preview: false
+        },
+        slider_Breakpoints: {
+            default: {
+                height: 740 //高度
+            },
+            tablet: {
+                height: 500,
+                media: 1024
+            }
+        }
+    });
+
+    function getAjaxDatas(module, blockId){//统一请求的方法
+        $.ajax({
+            type:'post',
+            data: {blockId: blockId},
+            url: '/meol/homepage/'+module+'.do',
+            dataType:'html',
+            success:function(datas){
+                $("#"+module).append(datas);
+            },
+            error:function(error){
+//                console.log(error);
+            }
+        });
+    }
+
+    window.onload = function () {
+        //处理后续模块的加载
+        var dataArr = [],
+            order = [];
+        $.ajax({// 获取模块加载的顺序
+            type:'get',
+            url: '/meol/homepage/indexBlock.do',
+            dataType:'html',
+            success:function(datas){
+                dataArr= datas.slice(1, datas.length-1).split(',');
+                for(var i=0; i<dataArr.length; i++){//将模块的id 转成接口名，以便后面统一请求
+                    if(dataArr[i] == 21 || dataArr[i] == '21'){
+
+                    }else if(dataArr[i] == 22 || dataArr[i] == '22'){
+                        //获取最新课程
+                        $.ajax({
+                            type:'post',
+                            data: {blockId: 22},
+                            url: '/meol/homepage/indexNewCourse.do',
+                            dataType:'html',
+                            success:function(datas){
+                                $(".bannerList").append($('<div class="right" id="menu"></div>'));
+                                $("#menu").append(datas);
+                            },
+                            error:function(error){
+//                                console.log(error);
+                            }
+                        });
+                    }else if(dataArr[i] == 23 || dataArr[i] == '23'){
+                        order.push({23:'indexReCommendCourse'})
+                    }else if(dataArr[i] == 24 || dataArr[i] == '24'){
+                        order.push({24:'indexRankingCourse'})
+                    }else if(dataArr[i] == 25 || dataArr[i] == '25'){
+                        order.push({25:'indexNotice'})
+                    }else if(dataArr[i] == 26 || dataArr[i] == '26'){
+                        order.push({26:'indexCourse'})
+                    }else if(dataArr[i] == 27 || dataArr[i] == '27'){
+                        order.push({27:'indexPodCast'})
+                    }else if(dataArr[i] == 29 || dataArr[i] == '29'){
+                        order.push({29:'indexDeptList'})
+                    }
+                }
+                function PromiseForEach(order, cb) {
+                    var realResult = [];
+                    var result = Promise.resolve();
+                    order.forEach(function (a, index) {
+                        result = result.then(function() {
+                            return cb(a).then(function(res) {
+                                realResult.push(res)
+                            })
+                        })
+                    });
+                    return result.then(function() {
+                            return realResult
+                    })
+                }
+
+                PromiseForEach(order,  function(ele) {
+                    return new Promise(function(resolve, reject) {
+                        setTimeout(function() {
+                            for(var property in ele){
+                                var div = document.createElement("div");
+                                div.setAttribute("id", ele[property]);
+                                div.setAttribute("blockId", property);
+
+                                $("#v9black_indexContent").append(div);
+
+                                getAjaxDatas(ele[property], property)
+                            }
+
+                            return resolve(ele);
+                        }, Math.random()*1000);
+                    })
+
+                }).then(function(data) {
+//                    console.log(data);
+                }).catch(function(err) {
+//                    console.log(err)
+                });
+
+                },
+                error:function(error){
+//                    console.log(error);
+                }
+            });
+    }
+
+</script>
+</body>
+</html>
